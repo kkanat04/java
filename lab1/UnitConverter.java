@@ -1,0 +1,12 @@
+public class UnitConverter {
+    public static void main(String[] args) {
+
+        double celsius = 22.0;
+
+        double fahrenheit = celsius * 9.0 / 5.0 + 32.0;
+
+        System.out.println("Celsius: " + celsius);
+        System.out.println("Fahrenheit: " + fahrenheit);
+        System.out.println("Fahrenheit (truncated): " + (int) fahrenheit);
+    }
+}
