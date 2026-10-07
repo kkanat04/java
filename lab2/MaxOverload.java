@@ -1,0 +1,35 @@
+package lab2;
+
+public class MaxOverload {
+
+    public static int max(int a, int b) {
+        if (a > b) {
+            return a;
+        } else {
+            return b;
+        }
+    }
+
+    public static int max(int a, int b, int c) {
+        return max(max(a, b), c);
+    }
+
+    public static double max(double a, double b) {
+        if (a > b) {
+            return a;
+        } else {
+            return b;
+        }
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("max(3, 8) = " + max(3, 8));
+
+        System.out.println("max(3, 8, 5) = "
+                + max(3, 8, 5));
+
+        System.out.println("max(2.5, 2.7) = "
+                + max(2.5, 2.7));
+    }
+}
